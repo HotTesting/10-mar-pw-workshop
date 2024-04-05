@@ -22,7 +22,7 @@ test("user can purchase product", async ({ page }) => {
 
 test("user can purchase 2 products", async ({ page }) => {
   // LOGIN
-  const login = new Login(page)
+  const login = new Login(page);
   await login.openAndLogin(email, password);
   // PURCHASE
   await page.getByRole("link", { name: "Brands " }).click();

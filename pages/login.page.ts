@@ -9,6 +9,7 @@ export class Login {
   async open() {
     await this.page.goto("https://shopdemo-alex-hot.koyeb.app/login");
   }
+
   async login(email: string, password: string) {
     await this.page
       .getByRole("main")
