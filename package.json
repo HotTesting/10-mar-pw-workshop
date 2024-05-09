@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "test-only-failed": "npx playwright test --last-failed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "1.42.1",
+    "@playwright/test": "1.44.0",
     "@types/node": "^20.11.25"
   }
 }

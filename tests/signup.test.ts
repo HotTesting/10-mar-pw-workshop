@@ -1,7 +1,8 @@
 import { randomUUID } from "crypto";
 import { test, expect } from "@playwright/test";
 
-test("user should be able to signup",async ({ page }) => {
+test("user should be able to signup", async ({ page }) => {
+  test.info().testId
   // const email = `xotabu4+${randomUUID().replace(/\-/g, '')}@gmail.com`;
   const email = `xotabu4+${randomUUID()}@gmail.com`;
   await page.goto("https://shopdemo-alex-hot.koyeb.app/");

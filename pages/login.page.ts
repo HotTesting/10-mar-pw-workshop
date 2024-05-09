@@ -6,6 +6,10 @@ export class Login {
   constructor(page: Page) {
     this.page = page;
   }
+  expectLoaded() {
+    ex
+  }
+
   async open() {
     await this.page.goto("https://shopdemo-alex-hot.koyeb.app/login");
   }
